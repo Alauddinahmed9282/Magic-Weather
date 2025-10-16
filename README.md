@@ -10,7 +10,7 @@ A beautiful and intuitive Android weather application built with Kotlin that pro
 ## 📱 Features
 
 - **Real-time Weather Data**: Get current weather conditions for any city
-- **Detailed Weather Information**: 
+- **Detailed Weather Information**:
   - Current temperature in Celsius
   - Humidity percentage
   - Wind speed
@@ -24,21 +24,22 @@ A beautiful and intuitive Android weather application built with Kotlin that pro
 ## 📸 Screenshots
 
 <!-- Add your app screenshots here -->
+
 ```
 | Home Screen | Search | Weather Details |
 |------------|--------|----------------|
-| ![Screenshot 1](screenshots/home.png) | ![Screenshot 2](screenshots/search.png) | ![Screenshot 3](screenshots/details.png) |
+| ![Screenshot 1](screenshots/1.png) | ![Screenshot 2](screenshots/2.png) | ![Screenshot 3](screenshots/3.png) |
 ```
 
 ## 🛠️ Tech Stack
 
 - **Language**: Kotlin
-- **UI Components**: 
+- **UI Components**:
   - Material Design Components
   - Custom XML Layouts
   - LinearLayout
 - **Architecture**: MVVM (Model-View-ViewModel)
-- **Networking**: 
+- **Networking**:
   - Retrofit / OkHttp (for API calls)
   - Coroutines (for asynchronous operations)
 - **API**: OpenWeatherMap API / WeatherAPI
@@ -103,22 +104,22 @@ Add these dependencies to your `build.gradle` file:
 dependencies {
     // Material Design
     implementation 'com.google.android.material:material:1.11.0'
-    
+
     // Retrofit for API calls
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
-    
+
     // Coroutines
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3'
-    
+
     // ViewModel and LiveData
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.7.0'
-    
+
     // Image Loading
     implementation 'com.github.bumptech.glide:glide:4.16.0'
-    
+
     // Core Android
     implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
@@ -129,9 +130,11 @@ dependencies {
 ## 🎨 UI Components
 
 ### Custom Background Shape
+
 The app uses a custom drawable for weather detail cards:
 
 **`res/drawable/weather_detail_bg.xml`**:
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
@@ -151,20 +154,16 @@ app/
 ├── src/
 │   ├── main/
 │   │   ├── java/com/yourpackage/weatherapp/
-│   │   │   ├── models/
 │   │   │   │   └── WeatherResponse.kt
-│   │   │   ├── network/
 │   │   │   │   ├── WeatherApiService.kt
 │   │   │   │   └── RetrofitClient.kt
-│   │   │   ├── repository/
-│   │   │   │   └── WeatherRepository.kt
-│   │   │   ├── viewmodel/
-│   │   │   │   └── WeatherViewModel.kt
-│   │   │   ├── ui/
 │   │   │   │   └── MainActivity.kt
-│   │   │   └── utils/
-│   │   │       └── Constants.kt
 │   │   ├── res/
+│   │   │   ├── drawable/
+│   │   │   │   └── background.xml
+│   │   │   │   └── location.xml
+│   │   │   │   └── weather_background.xml
+│   │   │   │   └── weather_detail_bg.xml
 │   │   │   ├── layout/
 │   │   │   │   └── activity_main.xml
 │   │   │   ├── drawable/
@@ -182,17 +181,20 @@ app/
 ## 🔑 Key Features Explained
 
 ### Weather Data Display
+
 - **Temperature**: Shows current temperature in Celsius
 - **Humidity**: Displays humidity percentage
 - **Wind Speed**: Shows wind speed in km/h
 - **Condition**: Current weather condition (Cloudy, Sunny, Rainy, etc.)
 
 ### City Search
+
 - Users can enter any city name
 - Real-time API call fetches weather data
 - Error handling for invalid city names
 
 ### UI/UX Features
+
 - Glassmorphism design with semi-transparent cards
 - Gradient backgrounds for modern look
 - Material Design components
@@ -207,6 +209,7 @@ https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=m
 ```
 
 ### Sample Response:
+
 ```json
 {
   "main": {
@@ -250,6 +253,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👨‍💻 Author
 
 **Your Name**
+
 - GitHub: [@yourusername](https://github.com/yourusername)
 - LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
 - Email: your.email@example.com
@@ -263,6 +267,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 If you have any questions or need help, feel free to:
+
 - Open an issue on GitHub
 - Contact me via email
 - Check out the [Wiki](https://github.com/yourusername/weather-app/wiki)
