@@ -23,13 +23,9 @@ A beautiful and intuitive Android weather application built with Kotlin that pro
 
 ## 📸 Screenshots
 
-<!-- Add your app screenshots here -->
-
-```
-| Home Screen | Search | Weather Details |
-|------------|--------|----------------|
+| Result 1                           | Result 2                           | Result 3                           |
+| ---------------------------------- | ---------------------------------- | ---------------------------------- |
 | ![Screenshot 1](screenshots/1.png) | ![Screenshot 2](screenshots/2.png) | ![Screenshot 3](screenshots/3.png) |
-```
 
 ## 🛠️ Tech Stack
 
